@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mridul Sharma - Data Scientist Portfolio</title>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Header / Navigation Menu -->
+  <header>
+    <nav>
+      <div class="nav-logo">
+        <a href="#home">Mridul Sharma</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Profile Section -->
+    <section id="home" class="profile-section">
+      <img src="images/profilepic.jpg" alt="Mridul Sharma" class="profile-pic">
+      <h1>Hi, I'm Mridul Sharma</h1>
+      <h2>Data Scientist (Computer Vision, Generative AI, NLP)</h2>
+      <div class="social-icons">
+        <a href="https://github.com/mridulbsharma" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mridulbsharma" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        As a versatile data scientist with a unique blend of aerospace engineering and machine learning expertise, I bring a multidisciplinary approach to solving complex problems across diverse domains. My portfolio spans from developing CNN-based traffic sign recognition systems to crafting NLP models for financial sentiment analysis, demonstrating proficiency in both computer vision and financial engineering. I've architected AI tutoring chatbots using cutting-edge LLM techniques, implemented hybrid recommendation systems, and optimized ML models for edge devices, showcasing my ability to deliver full-stack AI applications. With a keen interest in pushing the boundaries of technology, I'm eager to apply my skills to challenging projects in healthcare, autonomous vehicles, and quantitative research. Whether it's leveraging GANs for mobile applications or fine-tuning transformers for domain-specific tasks, I'm committed to driving innovation and delivering impactful solutions that transcend traditional industry boundaries.
+      </p>
+      <a href="resume\mridulbsharma_resume.rtf" target="_blank" class="button">Download Resume</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <!-- Project Cards -->
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="images\project 1.jpg" alt="Traffic Sign Recognition">
+        <div class="project-card-content">
+          <h3>🛑 German Traffic Sign Recognition System ⛔</h3>
+          <p class="project-summary">
+            Developed a CNN-based traffic sign recognition system achieving 98.7% accuracy on the GTSRB dataset. Implemented a modified LeNet architecture with enhancements to improve feature extraction and generalization...
+          </p>
+          <div class="project-card-buttons">
+            <a href="https://github.com/mridulbsharma/traffic-sign-recognition" target="_blank" class="github-link" aria-label="View project on GitHub">
+              <button><i class="fab fa-github"></i> View on GitHub</button>
+            </a>
+            <button onclick="toggleProjectDetails('project1-details')" aria-expanded="false">Read More</button>
+          </div>
+          <div id="project1-details" class="project-details" style="display: none;">
+            <!-- Expanded content -->
+            <ul>
+              <li><strong>Objective:</strong> Develop a CNN-based traffic sign recognition system using the German Traffic Sign Recognition Benchmark (GTSRB) dataset.</li>
+              <li><strong>Key Achievements:</strong>
+                <ul>
+                  <li>Achieved <strong>98.7%</strong> accuracy on the GTSRB test dataset.</li>
+                  <li>Implemented a modified LeNet architecture with enhancements such as dropout and batch normalization.</li>
+                  <li>Developed a Streamlit web application for user interaction.</li>
+                  <li>Integrated real-time webcam recognition using OpenCV.</li>
+                </ul>
+              </li>
+              <li><strong>Methodology:</strong>
+                <ul>
+                  <li><strong>Data Preprocessing:</strong> Resized images, normalized pixel values, and applied data augmentation techniques.</li>
+                  <li><strong>Model Development:</strong> Built a CNN model with multiple convolutional and pooling layers.</li>
+                  <li><strong>Model Training:</strong> Used cross-entropy loss and Adam optimizer for training.</li>
+                  <li><strong>Evaluation:</strong> Assessed model performance using accuracy and confusion matrix.</li>
+                </ul>
+              </li>
+              <li><strong>Technologies Used:</strong> Python, TensorFlow, Keras, OpenCV, Streamlit.</li>
+              <li><strong>Learnings:</strong> Gained hands-on experience in computer vision, deep learning, and deploying AI models as web applications.</li>
+            </ul>
+            <p>
+              You can find the source code and additional details on the
+              <a href="https://github.com/mridulbsharma/traffic-sign-recognition" target="_blank">GitHub repository</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="images\project 2.gif" alt="Hot Dog Not Hot Dog">
+        <div class="project-card-content">
+          <h3>🌭 Hot Dog or Not Hot Dog: Hackathon in Image Classification 🥪</h3>
+          <p class="project-summary">
+            Developed a hot dog image classifier using deep learning, achieving 95.25% accuracy with a fine-tuned InceptionV3 model...
+          </p>
+          <div class="project-card-buttons">
+            <a href="https://github.com/mridulbsharma/hot-dog-hackathon" target="_blank" class="github-link" aria-label="View project on GitHub">
+              <button><i class="fab fa-github"></i> View on GitHub</button>
+            </a>
+            <button onclick="toggleProjectDetails('project2-details')" aria-expanded="false">Read More</button>
+          </div>
+          <div id="project2-details" class="project-details" style="display: none;">
+            <!-- Expanded content -->
+            <ul>
+              <li><strong>Objective:</strong> Create a deep learning model to classify images as hot dog or not hot dog.</li>
+              <li><strong>Key Achievements:</strong>
+                <ul>
+                  <li>Achieved <strong>95.25%</strong> accuracy using a fine-tuned InceptionV3 model.</li>
+                  <li>Collected and curated a dataset of hot dog and non-hot dog images.</li>
+                  <li>Implemented data augmentation to enhance model generalization.</li>
+                </ul>
+              </li>
+              <li><strong>Methodology:</strong>
+                <ul>
+                  <li><strong>Data Collection:</strong> Scraped images from various sources and manually labeled them.</li>
+                  <li><strong>Model Development:</strong> Fine-tuned a pre-trained InceptionV3 model on the custom dataset.</li>
+                  <li><strong>Evaluation:</strong> Used precision, recall, and F1-score to assess model performance.</li>
+                </ul>
+              </li>
+              <li><strong>Technologies Used:</strong> Python, TensorFlow, Keras, NumPy, Matplotlib.</li>
+              <li><strong>Learnings:</strong> Gained experience in transfer learning and the importance of data quality in image classification tasks.</li>
+            </ul>
+            <p>
+              You can find the source code and additional details on the
+              <a href="https://github.com/mridulbsharma/hot-dog-hackathon" target="_blank">GitHub repository</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="images\project 3.gif" alt="Reddit NLP Classification">
+        <div class="project-card-content">
+          <h3>📈 Reddit NLP: Cryptocurrency vs. Stock Post Classification 📉</h3>
+          <p class="project-summary">
+            Developed a binary classification model using NLP techniques to distinguish between cryptocurrency and stock-related Reddit posts with nearly 93% accuracy...
+          </p>
+          <div class="project-card-buttons">
+            <a href="https://github.com/mridulbsharma/crypto-stocks-nlp" target="_blank" class="github-link" aria-label="View project on GitHub">
+              <button><i class="fab fa-github"></i> View on GitHub</button>
+            </a>
+            <button onclick="toggleProjectDetails('project3-details')" aria-expanded="false">Read More</button>
+          </div>
+          <div id="project3-details" class="project-details" style="display: none;">
+            <!-- Expanded content -->
+            <ul>
+              <li><strong>Objective:</strong> Develop a binary classification model to distinguish between cryptocurrency and stock-related Reddit posts.</li>
+              <li><strong>Key Achievements:</strong>
+                <ul>
+                  <li>Achieved nearly <strong>93%</strong> accuracy using NLP techniques.</li>
+                  <li>Scraped data from Reddit using PRAW API.</li>
+                  <li>Performed text preprocessing including tokenization, lemmatization, and stop-word removal.</li>
+                  <li>Compared multiple models including Logistic Regression, Naive Bayes, and SVM.</li>
+                </ul>
+              </li>
+              <li><strong>Methodology:</strong>
+                <ul>
+                  <li><strong>Data Collection:</strong> Gathered posts from r/CryptoMoonShots and r/wallstreetbets.</li>
+                  <li><strong>Feature Extraction:</strong> Used TF-IDF vectorization to convert text data into numerical format.</li>
+                  <li><strong>Model Training:</strong> Trained classifiers and performed hyperparameter tuning using GridSearchCV.</li>
+                  <li><strong>Evaluation:</strong> Assessed models using accuracy, precision, recall, and ROC-AUC curves.</li>
+                </ul>
+              </li>
+              <li><strong>Technologies Used:</strong> Python, scikit-learn, NLTK, PRAW, Matplotlib.</li>
+              <li><strong>Learnings:</strong> Enhanced understanding of NLP preprocessing techniques and model evaluation metrics in text classification.</li>
+            </ul>
+            <p>
+              You can find the source code and additional details on the
+              <a href="https://github.com/mridulbsharma/crypto-stocks-nlp" target="_blank">GitHub repository</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="images\project 4.png" alt="Gun Violence EDA and Predictive Modeling">
+        <div class="project-card-content">
+          <h3>🔫 Gun Violence EDA and Predictive Modeling 🔫</h3>
+          <p class="project-summary">
+            Conducted exploratory data analysis (EDA) and developed predictive models on U.S. gun violence incidents from 2013 to 2018. Achieved 77% accuracy with Linear Regression for predicting casualties and 89.6% R² score with Logistic Regression for classifying incidents with casualties...
+          </p>
+          <div class="project-card-buttons">
+            <a href="https://github.com/mridulbsharma/gun-violence-trends" target="_blank" class="github-link" aria-label="View project on GitHub">
+              <button><i class="fab fa-github"></i> View on GitHub</button>
+            </a>
+            <button onclick="toggleProjectDetails('project4-details')" aria-expanded="false">Read More</button>
+          </div>
+          <div id="project4-details" class="project-details" style="display: none;">
+            <!-- Expanded content -->
+            <ul>
+              <li><strong>Objective:</strong> Analyze U.S. gun violence data to identify patterns and develop predictive models for casualties.</li>
+              <li><strong>Key Achievements:</strong>
+                <ul>
+                  <li>Conducted exploratory data analysis on approximately 240,000 incidents.</li>
+                  <li>Identified key factors contributing to gun violence and casualties.</li>
+                  <li>Developed predictive models with <strong>77%</strong> accuracy using Linear Regression and an R² score of <strong>0.896</strong> using Logistic Regression.</li>
+                </ul>
+              </li>
+              <li><strong>Insights:</strong>
+                <ul>
+                  <li><strong>Strong Indicators for Having Casualties:</strong>
+                    <ul>
+                      <li>Terrorism involvement.</li>
+                      <li>Incidents at parties, bars, or clubs.</li>
+                      <li>Locations in Alaska or Arizona.</li>
+                      <li>Gang involvement.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Strong Indicators for Not Having Casualties:</strong>
+                    <ul>
+                      <li>Incidents involving robbery.</li>
+                      <li>Locations in Wyoming, Massachusetts, New Hampshire, or Maine.</li>
+                      <li>Perpetrators under the influence of drugs or alcohol.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><strong>Methodology:</strong>
+                <ul>
+                  <li><strong>Data Preprocessing:</strong> Handled missing data, performed feature engineering, vectorized text data.</li>
+                  <li><strong>Model Training:</strong> Used Linear and Logistic Regression with hyperparameter tuning.</li>
+                  <li><strong>Evaluation:</strong> Used metrics appropriate for regression and classification tasks.</li>
+                </ul>
+              </li>
+              <li><strong>Technologies Used:</strong> Python, pandas, scikit-learn, Matplotlib, Seaborn.</li>
+              <li><strong>Learnings:</strong> Gained experience in handling large datasets and interpreting model coefficients to derive meaningful insights.</li>
+            </ul>
+            <p>
+              You can find the source code and additional details on the
+              <a href="https://github.com/mridulbsharma/gun-violence-trends" target="_blank">GitHub repository</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="project-card">
+        <img src="images\project 5.jpg" alt="Ames Housing Data Analysis and Price Prediction">
+        <div class="project-card-content">
+          <h3>🏡 Ames Housing Data Analysis and Price Prediction 🏚️</h3>
+          <p class="project-summary">
+            Developed a predictive model for house prices in Ames, Iowa, achieving an RMSE of 27,391.35 in the Kaggle competition. Employed data preprocessing, exploratory data analysis, and feature engineering on a dataset of 2,930 properties with 82 variables...
+          </p>
+          <div class="project-card-buttons">
+            <a href="https://github.com/mridulbsharma/kaggle-ames-challenge" target="_blank" class="github-link" aria-label="View project on GitHub">
+              <button><i class="fab fa-github"></i> View on GitHub</button>
+            </a>
+            <button onclick="toggleProjectDetails('project5-details')" aria-expanded="false">Read More</button>
+          </div>
+          <div id="project5-details" class="project-details" style="display: none;">
+            <!-- Expanded content -->
+            <ul>
+              <li><strong>Objective:</strong> Develop a predictive model for house prices in Ames, Iowa.</li>
+              <li><strong>Key Achievements:</strong>
+                <ul>
+                  <li>Achieved an RMSE of <strong>27,391.35</strong> in the Kaggle competition.</li>
+                  <li>Conducted extensive data preprocessing and feature engineering on 82 variables.</li>
+                  <li>Implemented Linear Regression, Ridge Regression, Lasso Regression, and Elastic Net Regression.</li>
+                  <li>Lasso Regression performed best, capturing complex relationships between features and sale prices.</li>
+                </ul>
+              </li>
+              <li><strong>Key Insights:</strong>
+                <ul>
+                  <li>Overall Quality: Each one-point increase leads to an approximate $19,590 increase in sale price.</li>
+                  <li>Year Built: Each additional year increases the sale price by about $3,680.</li>
+                  <li>Garage Capacity: An extra car capacity adds approximately $3,740 to the sale price.</li>
+                </ul>
+              </li>
+              <li><strong>Methodology:</strong>
+                <ul>
+                  <li><strong>Feature Selection:</strong> Based on EDA insights and domain knowledge.</li>
+                  <li><strong>Model Evaluation:</strong> Used RMSE on training and test datasets.</li>
+                  <li><strong>Hyperparameter Tuning:</strong> Employed cross-validation techniques for optimization.</li>
+                </ul>
+              </li>
+              <li><strong>Technologies Used:</strong> Python, pandas, scikit-learn, Matplotlib, Seaborn.</li>
+              <li><strong>Learnings:</strong> Improved understanding of regression techniques and the impact of feature selection on model performance.</li>
+            </ul>
+            <p>
+              You can find the source code and additional details on the
+              <a href="https://github.com/mridulbsharma/kaggle-ames-challenge" target="_blank">GitHub repository</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-container">
+        <!-- Experience Item -->
+        <div class="experience-item">
+          <div class="experience-content">
+            <h3>General Assembly</h3>
+            <h4>Data Science Immersive Fellow</h4>
+            <p class="experience-date"><em>May 2024 - September 2024</em></p>
+            <ul>
+              <li>Utilized Python, SQL, and R for exploratory data analysis with dashboards.</li>
+              <li>Model tuning with deep learning and web application deployment using Streamlit and Flask.</li>
+              <li>Implemented a CNN using modified LeNet architecture on the GTSRB dataset, achieving 98.7% accuracy.</li>
+              <li>Performed financial sentiment analysis by creating an NLP model, achieving 93% accuracy.</li>
+              <li>Ranked top 5 in Housing Price Kaggle Competition with an RMSE of $27,000.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Experience Item -->
+        <div class="experience-item">
+          <div class="experience-content">
+            <h3>Ribit</h3>
+            <h4>LLM Prompt Engineer - Contract</h4>
+            <p class="experience-date"><em>September 2023 - April 2024</em></p>
+            <ul>
+              <li>Engineered prompts for chatbot applications using GPT-3.5 and GPT-4, enhancing customer engagement for auto dealerships.</li>
+              <li>Leveraged Langchain framework to build conversational agents with memory management and context retention.</li>
+              <li>Implemented Retrieval-Augmented Generation (RAG) with Pinecone vector database.</li>
+              <li>Developed an A/B testing framework for prompt optimization.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Experience Item -->
+        <div class="experience-item">
+          <div class="experience-content">
+            <h3>Alison</h3>
+            <h4>Machine Learning Engineer - Contract</h4>
+            <p class="experience-date"><em>November 2022 - August 2023</em></p>
+            <ul>
+              <li>Architected AI tutoring chatbot agents using Langchain and fine-tuned GPT-3 models.</li>
+              <li>Developed an OCR pipeline using Tesseract and OpenCV for content summarization.</li>
+              <li>Designed a rubric-based feedback system using BERT and T5.</li>
+              <li>Created a hybrid recommendation system combining collaborative filtering and content-based approaches.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Experience Item -->
+        <div class="experience-item">
+          <div class="experience-content">
+            <h3>Upwork</h3>
+            <h4>Artificial Intelligence Specialist - Contract</h4>
+            <p class="experience-date"><em>June 2020 - March 2021</em></p>
+            <ul>
+              <li>Developed a property analysis tool for PropTech startup RealInsight.</li>
+              <li>Optimized YOLOv5 architecture for real-time crop health detection in AgriDrone project.</li>
+              <li>Architected scalable ETL pipelines using Apache Airflow, Kafka, and Spark.</li>
+              <li>Implemented a hybrid recommendation system for e-commerce startup ShopSmart.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Experience Item -->
+        <div class="experience-item">
+          <div class="experience-content">
+            <h3>Plentari Financial Services</h3>
+            <h4>Machine Learning Specialist</h4>
+            <p class="experience-date"><em>April 2019 - June 2020</em></p>
+            <ul>
+              <li>Deployed face-swapping ML algorithms for fashion/sports niche applications using advanced GANs.</li>
+              <li>Fine-tuned a custom CNN architecture for facial shape classification, achieving 95% accuracy.</li>
+              <li>Optimized model performance for mobile deployment using TensorFlow Lite and ONNX Runtime.</li>
+              <li>Collaborated with UX team to integrate ML features in a tiered subscription model.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <!-- Skill Category Card -->
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>R</li>
+            <li>C++</li>
+            <li>MATLAB</li>
+          </ul>
+        </div>
+        <!-- Skill Category Card -->
+        <div class="skill-card">
+          <h3>Machine Learning</h3>
+          <ul>
+            <li>Scikit-learn</li>
+            <li>TensorFlow</li>
+            <li>PyTorch</li>
+            <li>Keras</li>
+            <li>XGBoost</li>
+            <li>LightGBM</li>
+          </ul>
+        </div>
+        <!-- Skill Category Card -->
+        <div class="skill-card">
+          <h3>Data Processing</h3>
+          <ul>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>PySpark</li>
+            <li>Dask</li>
+          </ul>
+        </div>
+        <!-- Skill Category Card -->
+        <div class="skill-card">
+          <h3>NLP & Computer Vision</h3>
+          <ul>
+            <li>NLTK</li>
+            <li>SpaCy</li>
+            <li>OpenCV</li>
+            <li>Transformers</li>
+            <li>Hugging Face</li>
+          </ul>
+        </div>
+        <!-- Skill Category Card -->
+        <div class="skill-card">
+          <h3>MLOps</h3>
+          <ul>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>MLflow</li>
+            <li>Weights & Biases</li>
+            <li>Airflow</li>
+          </ul>
+        </div>
+        <!-- Skill Category Card -->
+        <div class="skill-card">
+          <h3>Cloud & Databases</h3>
+          <ul>
+            <li>AWS</li>
+            <li>GCP</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Redis</li>
+            <li>Pinecone</li>
+          </ul>
+        </div>
+        <!-- Skill Category Card -->
+        <div class="skill-card">
+          <h3>Visualization</h3>
+          <ul>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>Plotly</li>
+            <li>Tableau</li>
+          </ul>
+        </div>
+        <!-- Skill Category Card -->
+        <div class="skill-card">
+          <h3>Web Development</h3>
+          <ul>
+            <li>Flask</li>
+            <li>FastAPI</li>
+            <li>Streamlit</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education and Community Involvement -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>Bachelor of Science (BS) in Aerospace Engineering</h3>
+        <p><strong>University of Miami</strong>, Coral Gables, FL</p>
+      </div>
+      <div class="education-item">
+        <h3>Bachelor of Science (BS) in Aerospace Engineering</h3>
+        <p><strong>Syracuse University</strong>, Syracuse, NY</p>
+      </div>
+      <h3>Certifications</h3>
+      <ul>
+        <li>Data Scientist in Python Certificate, Dataquest (Expected: November 2024)</li>
+        <li>Data Science Certificate of Completion, General Assembly</li>
+        <li>Data Analyst Certificate, DataCamp</li>
+      </ul>
+    </section>
+
+    <section id="community">
+      <h2>Community Involvement</h2>
+      <ul>
+        <li>
+          <strong>Undergraduate Mentor</strong> at Institute for Ultrafast Spectroscopy and Lasers (IUSL), City College of New York
+        </li>
+        <li>
+          10+ years of coaching and participation in New York Junior Tennis League (NYJTL)
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/manywzab" method="POST" id="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email *</label>
+          <input type="email" id="email" name="_replyto" required placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message *</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Mridul Sharma. All rights reserved.</p>
+      <p><a href="mailto:mridulbsharma1@gmail.com">mridulbsharma1@gmail.com</a></p>
+      <div class="social-media">
+        <a href="https://github.com/mridulbsharma" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mridulbsharma" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="script.js"></script>
+</body>
+</html>
