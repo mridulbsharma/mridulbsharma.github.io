@@ -94,7 +94,7 @@ nav {
 }
 
 .profile-pic {
-  width: 80%;
+  width: 100%;
   max-width: 400px;
   height: auto;
   border-radius: 50%;
@@ -250,8 +250,8 @@ nav {
 }
 
 .project-card img {
-  width: 50%;
-  height: 50%; /* Set a fixed height */
+  width: 75%;
+  height: 75%; /* Set a fixed height */
   object-fit: cover; /* This will ensure the image covers the area without distortion */
   border-radius: 5px;
   margin-bottom: 20px;
